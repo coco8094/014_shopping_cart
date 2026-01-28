@@ -8,8 +8,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
+    //vueDevTools(),
   ],
+  base: '/014_shopping_cart/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
